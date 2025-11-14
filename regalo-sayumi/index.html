@@ -25,15 +25,42 @@
                 <h2>Crea tu Propia Escena Navideña</h2>
                 <div class="creation-area">
                     <div id="scene" class="scene">
-                        <img src="https://i.imgur.com/h3a3n4d.png" alt="Árbol de Navidad" class="tree-img">
+                        <!-- SVG del Árbol de Navidad -->
+                        <svg viewBox="0 0 200 250" class="tree-img">
+                            <rect x="85" y="220" width="30" height="30" fill="#6b4f3a"/>
+                            <polygon points="100,10 40,80 70,80 20,150 50,150 0,220 200,220 150,150 180,150 130,80 160,80" fill="#2a7e4a"/>
+                            <polygon points="100,10 40,80 70,80 20,150 50,150 0,220 200,220 150,150 180,150 130,80 160,80" fill-opacity="0.3" fill="#fff"/>
+                        </svg>
                     </div>
                     <div id="decorations-palette" class="decorations-palette">
                         <h3>Adornos</h3>
-                        <img src="https://i.imgur.com/U28B43j.png" id="deco1" class="deco-item" draggable="true" alt="Bola Roja">
-                        <img src="https://i.imgur.com/tXA21a8.png" id="deco2" class="deco-item" draggable="true" alt="Estrella">
-                        <img src="https://i.imgur.com/I2Z6n3E.png" id="deco3" class="deco-item" draggable="true" alt="Bola Azul">
-                        <img src="https://i.imgur.com/wLpA1b1.png" id="deco4" class="deco-item" draggable="true" alt="Regalo">
-                        <img src="https://i.imgur.com/sO4f5a9.png" id="deco5" class="deco-item" draggable="true" alt="Calcetín">
+                        <!-- Bola Roja -->
+                        <svg id="deco1" class="deco-item" draggable="true" viewBox="0 0 100 100">
+                            <rect x="45" y="0" width="10" height="15" fill="#d4af37"/>
+                            <circle cx="50" cy="55" r="45" fill="#d90429"/>
+                            <circle cx="50" cy="55" r="35" fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.5"/>
+                        </svg>
+                        <!-- Estrella -->
+                        <svg id="deco2" class="deco-item" draggable="true" viewBox="0 0 100 100">
+                            <polygon points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="#fca311"/>
+                        </svg>
+                        <!-- Bola Azul -->
+                        <svg id="deco3" class="deco-item" draggable="true" viewBox="0 0 100 100">
+                            <rect x="45" y="0" width="10" height="15" fill="#d4af37"/>
+                            <circle cx="50" cy="55" r="45" fill="#0077b6"/>
+                            <circle cx="50" cy="55" r="35" fill="none" stroke="#fff" stroke-width="3" stroke-opacity="0.5"/>
+                        </svg>
+                        <!-- Regalo -->
+                        <svg id="deco4" class="deco-item" draggable="true" viewBox="0 0 100 100">
+                            <rect width="100" height="100" fill="#ef233c"/>
+                            <rect y="40" width="100" height="20" fill="#fca311"/>
+                            <rect x="40" width="20" height="100" fill="#fca311"/>
+                        </svg>
+                        <!-- Calcetín -->
+                        <svg id="deco5" class="deco-item" draggable="true" viewBox="0 0 100 100">
+                            <path d="M10 20 V80 Q10 90 20 90 H70 Q90 90 90 70 V40 H60 V20 Z" fill="#d90429"/>
+                            <rect x="10" y="10" width="80" height="10" fill="#fff"/>
+                        </svg>
                     </div>
                 </div>
                 <p>¡Arrastra los adornos para decorar! Espero que te diviertas.</p>
