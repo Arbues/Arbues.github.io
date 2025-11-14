@@ -55,8 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Calculate position relative to the scene
         const sceneRect = scene.getBoundingClientRect();
-        const x = e.clientX - sceneRect.left - (clone.width / 2);
-        const y = e.clientY - sceneRect.top - (clone.height / 2);
+        // Use a fixed size (50px, from .placed-deco class) for the calculation
+        // because SVG elements don't have .width/.height properties.
+        const decoSize = 50; 
+        const x = e.clientX - sceneRect.left - (decoSize / 2);
+        const y = e.clientY - sceneRect.top - (decoSize / 2);
 
         clone.style.left = `${x}px`;
         clone.style.top = `${y}px`;
